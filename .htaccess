@@ -1,0 +1,8 @@
+# note, you dont have to do this, but if you want urls like "next/123" then do this:
+
+RewriteEngine On
+RewriteRule ^next/([0-9]+)$ next.php?id=$1 [L]
+RewriteRule ^random/?$ random.php [L]
+RewriteRule ^list/?$ index.php [L]
+RewriteRule ^install/([a-z]+)$ install.php?db_type=$1 [L]
+RewriteRule ^prev/([0-9]+)$ prev.php?id=$1 [L]
